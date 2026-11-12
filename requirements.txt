@@ -1,0 +1,12 @@
+# Tested with Python 3.13.2 on Windows 11 (see README for details).
+mediapipe==1.2.0
+# mediapipe depends on opencv-contrib-python, which provides the same `cv2`
+# module as opencv-python (plus extra modules). Installing both packages makes
+# them overwrite each other's files, so only the contrib build is listed.
+opencv-contrib-python==5.0.0.93
+customtkinter==6.0.0
+Pillow==13.0.0
+numpy==2.5.4
+
+# Testing
+pytest==9.2.0
